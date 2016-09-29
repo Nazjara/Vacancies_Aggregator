@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Vacancies Aggregator</title>
+    <link rel="stylesheet" href="webjars/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img src="images/tenders-and-information-aggregators.jpg"/>
+            <h1><strong>Vacancies Aggregator</strong></h1>
+            <h3>Choose desired city and job and get results about available vacancies from the most popular ukrainian websites</h3>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                    <h5>Please choose desired city:</h5><br>
+                    <form action="aggregate" method="post">
+                        <div id="city_input">
+                            <input name="city" id="city" type="text" title="city">
+                            <p id="city_null"></p>
+                        </div><br>
+                     <h5>Please choose desired vacancy:</h5><br>
+                        <div id="vacancy_input">
+                            <input name="vacancy" id="vacancy" type="text" title="vacancy">
+                            <p id="vacancy_null"></p>
+                        </div><br>
+                        <button id="button" class="btn" type="submit">Confirm</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="webjars/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
+    <script src='js/app.js' type="text/javascript"></script>
+</body>
+</html>

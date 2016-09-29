@@ -1,0 +1,137 @@
+body
+{
+    background-color: #aac1ea;
+}
+
+table
+{
+    width: 100%;
+}
+
+.color
+{
+    background-color: #c5d8ea;
+}
+
+th
+{
+    background-color: #aac1ea;
+    font-family: Georgia, sans-serif;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    padding:10px 0 10px 0;
+}
+
+td
+{
+    font-size: 20px;
+    font-family: Arial,sans-serif;
+    padding:5px 0 5px 0;
+    border-bottom: 1px solid black;
+}
+
+th,td
+{
+    padding-left:20px;
+    border-right: 3px solid black;
+}
+
+.site_name
+{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    display: block;
+}
+
+.main
+{
+    text-align:center;
+    font-size: 20px;
+}
+
+.header,.jumbotron
+{
+    text-align: center;
+}
+
+.header h1
+{
+    font-family: Georgia, sans-serif;
+    font-size: 50px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.header h3
+{
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom:10px;
+}
+
+.header img
+{
+    margin-top:20px;
+    width:30%;
+    height:30%;
+}
+
+.jumbotron h5
+{
+    font-family: Verdana, sans-serif;
+    font-size:25px;
+    margin: -10px;
+   
+}
+
+#city_null, #vacancy_null
+{
+    color:red;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.jumbotron form
+{
+    margin:10px;
+}
+
+input
+{
+    width:300px;
+    height:35px;
+    font-size: 20px;
+    text-align:center;
+}
+
+#button
+{
+    background-color: aquamarine;
+    font-size:20px;
+    color: darkslategray;
+    font-family: Verdana, sans-serif;
+    padding:10px 30px 10px 30px;
+    margin: 10px auto;
+    display: block;
+    float:none;
+}
+
+#button:hover
+{
+    background-color: darkcyan;
+    color: black;
+}
+
+#button:active
+{
+    top:3px;
+}
+
+#vacancy
+{
+    margin:10px;
+}
+
+
+
