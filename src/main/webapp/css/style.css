@@ -39,9 +39,8 @@ th,td
 .site_name
 {
     font-size: 40px;
+    margin: 30px auto 0 auto;
     text-align: center;
-    margin-top: 30px;
-    display: block;
 }
 
 .main
@@ -107,7 +106,7 @@ input
 
 #button
 {
-    background-color: aquamarine;
+    background-color: #9fd5ff;
     font-size:20px;
     color: darkslategray;
     font-family: Verdana, sans-serif;
@@ -119,7 +118,7 @@ input
 
 #button:hover
 {
-    background-color: darkcyan;
+    background-color: #49708b;
     color: black;
 }
 
@@ -133,5 +132,21 @@ input
     margin:10px;
 }
 
+#loadImg
+{
+    z-index:1000;
+    display:none;
+}
 
+#overlay
+{
+    opacity : 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    z-index: 5000;
+    display: none;
+}
 

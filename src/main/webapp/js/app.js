@@ -1,9 +1,5 @@
-/**
- * Created by Nazar on 30.05.2016.
- */
-
 var main = function() {
-    $(".btn").click(function() {
+    $(".btn-default").click(function() {
         var city = $("#city").val();
         var vacancy = $("#vacancy").val();
         if(city === "")
@@ -22,7 +18,22 @@ var main = function() {
         {
             $("#vacancy_null").text("");
         }
-        return !!(city !== "" && vacancy !== "");
+        if(city !== "" && vacancy !== "")
+        {
+            $("body").append("<img id='loadImg' src='images/loader.gif'/>").append("<div id='overlay'></div>");
+            var docHeight = $(document).height();
+            var imgObj = $("#loadImg");
+            var div_overlay = $("#overlay");
+            div_overlay.height(docHeight);
+            div_overlay.show();
+            imgObj.css({"top": (($(window).height() - imgObj.outerHeight()) / 2) + $(window).scrollTop() + "px"});
+            imgObj.css({"left": (($(window).width() - imgObj.outerWidth()) / 2) + $(window).scrollLeft() + "px"});
+            imgObj.css({"position": "absolute"});
+            imgObj.show();
+            return true;
+        }
+        else
+            return false;
     });
 };
 

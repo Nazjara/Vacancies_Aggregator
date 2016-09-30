@@ -9,7 +9,7 @@
 </head>
 <body>
 <table>
-    <a href="http:\\www.hh.ua" class="site_name">hh.ua</a>
+    <div class="site_name"><a href="http:\\www.hh.ua">hh.ua</a></div>
     <tr>
         <th class="main">Title</th>
         <th class="main">City</th>
@@ -27,7 +27,7 @@
     </c:forEach>
 </table>
 <table>
-    <a href="http:\\www.rabotaplus.ua" class="site_name">rabotaplus.ua</a>
+    <div class="site_name"><a href="http:\\www.rabotaplus.ua">rabotaplus.ua</a></div>
     <tr>
         <th class="main">Title</th>
         <th class="main">City</th>
@@ -45,7 +45,7 @@
     </c:forEach>
 </table>
 <table>
-    <a href="http:\\www.work.ua" class="site_name">work.ua</a>
+    <div class="site_name"><a href="http:\\www.work.ua">work.ua</a></div>
     <tr>
         <th class="main">Title</th>
         <th class="main">City</th>
@@ -62,6 +62,6 @@
                 </tr>
     </c:forEach>
 </table>
-<button id="button" onclick="window.history.back()">Back to main page</button>
+<button id="button" class="btn-block" onclick="window.history.back()">Back to main page</button>
 </body>
 </html>

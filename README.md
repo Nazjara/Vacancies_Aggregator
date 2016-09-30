@@ -19,3 +19,5 @@ How to install using Maven and Tomcat:
 2. Find .war file in project's 'target' directory and move it to Tomcat directory 'webapps'  
 3. Run Tomcat, open your browser and enter 'http://localhost:8080/Vacancies%20Aggregator/' 
 4. Enjoy!  
+
+P.S. Application was created and tested using browser Google Chrome. Correct working using other browsers is not proved.
