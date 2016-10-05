@@ -23,17 +23,18 @@ var main = function() {
             $("body").append("<img id='loadImg' src='images/loader.gif'/>").append("<div id='overlay'></div>");
             var docHeight = $(document).height();
             var imgObj = $("#loadImg");
-            var div_overlay = $("#overlay");
-            div_overlay.height(docHeight);
-            div_overlay.show();
+            var divOverlay = $("#overlay");
+            divOverlay.height(docHeight);
+            divOverlay.show();
             imgObj.css({"top": (($(window).height() - imgObj.outerHeight()) / 2) + $(window).scrollTop() + "px"});
             imgObj.css({"left": (($(window).width() - imgObj.outerWidth()) / 2) + $(window).scrollLeft() + "px"});
             imgObj.css({"position": "absolute"});
             imgObj.show();
             return true;
         }
-        else
+        else {
             return false;
+        }
     });
 };
 

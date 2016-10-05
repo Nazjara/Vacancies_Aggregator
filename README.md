@@ -1,5 +1,7 @@
 # Vacancies Aggregator
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/baa11c26a1714dd39251e65ff5731980)](https://www.codacy.com/app/nazjara/Vacancies_Aggregator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nazjara/Vacancies_Aggregator&amp;utm_campaign=Badge_Grade)
+
 Simple java web application, that can be used for aggregation different vacations from the most popular ukrainian websites. All what you need is to input desired city and vacancy, and you will get total list with vacations in convenient format.
 
 Used tools:
