@@ -17,24 +17,30 @@ public class HtmlService
         this.providers = providers;
     }
 
-    public List<Vacancy> selectCityAndVacancyHHProvider(String city, String vacancy)
+    public List<Vacancy> selectCityAndVacancyWorkProvider(String city, String vacancy)
     {
         List<Vacancy> list = new ArrayList<>();
         list.addAll(providers[0].getVacancies(city,vacancy));
         return list;
     }
 
-    public List<Vacancy> selectCityAndVacancyRabotaPlusProvider(String city, String vacancy)
-    {
+    public List<Vacancy> selectCityAndVacancyRabotaProvider(String city, String vacancy) {
         List<Vacancy> list = new ArrayList<>();
         list.addAll(providers[1].getVacancies(city,vacancy));
         return list;
     }
 
-    public List<Vacancy> selectCityAndVacancyWorkProvider(String city, String vacancy)
+    public List<Vacancy> selectCityAndVacancyHHProvider(String city, String vacancy)
     {
         List<Vacancy> list = new ArrayList<>();
         list.addAll(providers[2].getVacancies(city,vacancy));
+        return list;
+    }
+
+    public List<Vacancy> selectCityAndVacancyRabotaPlusProvider(String city, String vacancy)
+    {
+        List<Vacancy> list = new ArrayList<>();
+        list.addAll(providers[3].getVacancies(city,vacancy));
         return list;
     }
 }

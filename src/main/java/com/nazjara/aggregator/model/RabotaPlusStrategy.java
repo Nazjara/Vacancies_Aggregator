@@ -7,6 +7,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class RabotaPlusStrategy implements Strategy
         {
             while(true)
             {
-                Document doc = getDocument(vacancy,city,i++);
+                Document doc = getDocument(city,vacancy,i++);
                 Elements e = doc.getElementsByClass("js-item_list");
                 if (e.size()!=0)
                 {
@@ -50,14 +51,14 @@ public class RabotaPlusStrategy implements Strategy
         }
         catch (IOException e)
         {
-            //do nothing
+            e.printStackTrace();
         }
         return vacancies;
     }
 
-    private Document getDocument(String vacancy, String city, int page) throws IOException
+    private Document getDocument(String city, String vacancy, int page) throws IOException
     {
-        String s = String.format(URL_FORMAT, vacancy,city,page);
+        String s = String.format(URL_FORMAT, URLEncoder.encode(city,"UTF-8"),URLEncoder.encode(vacancy,"UTF-8"),page);
         return Jsoup.connect(s).userAgent(userAgent).referrer(referrer).get();
     }
 }

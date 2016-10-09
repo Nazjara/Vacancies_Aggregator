@@ -30,4 +30,8 @@ class Controller
     {
         return service.selectCityAndVacancyWorkProvider(city,vacancy);
     }
+
+    List<Vacancy> onCityAndVacancySelectRabotaProvider(String city, String vacancy) {
+        return service.selectCityAndVacancyRabotaProvider(city,vacancy);
+    }
 }
