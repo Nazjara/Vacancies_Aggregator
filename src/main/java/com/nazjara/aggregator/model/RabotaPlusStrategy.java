@@ -58,7 +58,7 @@ public class RabotaPlusStrategy implements Strategy
 
     private Document getDocument(String city, String vacancy, int page) throws IOException
     {
-        String s = String.format(URL_FORMAT, URLEncoder.encode(city,"UTF-8"),URLEncoder.encode(vacancy,"UTF-8"),page);
+        String s = String.format(URL_FORMAT, URLEncoder.encode(vacancy,"UTF-8"),URLEncoder.encode(city,"UTF-8"),page);
         return Jsoup.connect(s).userAgent(userAgent).referrer(referrer).get();
     }
 }

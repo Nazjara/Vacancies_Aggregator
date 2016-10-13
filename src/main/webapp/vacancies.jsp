@@ -16,6 +16,9 @@
         <th class="main">Company Name</th>
         <th class="main">Salary</th>
     </tr>
+    <c:if test="${empty workVacancyList}">
+        <h4 style="text-align: center">Unfortunately no vacancies were found. Please try another set of parameters</h4>
+    </c:if>
     <c:forEach items="${workVacancyList}" var="vacancy">
         <jsp:useBean id="vacancy" scope="page" type="com.nazjara.aggregator.vo.Vacancy"/>
         <tr class="${vacancy.color ? 'color' : ''}">
@@ -34,6 +37,9 @@
         <th class="main">Company Name</th>
         <th class="main">Salary</th>
     </tr>
+    <c:if test="${empty rabotaVacancyList}">
+        <h4 style="text-align: center">Unfortunately no vacancies were found. Please try another set of parameters</h4>
+    </c:if>
     <c:forEach items="${rabotaVacancyList}" var="vacancy1">
         <jsp:useBean id="vacancy1" scope="page" type="com.nazjara.aggregator.vo.Vacancy"/>
         <tr class="${vacancy1.color ? 'color' : ''}">
@@ -52,6 +58,9 @@
         <th class="main">Company Name</th>
         <th class="main">Salary</th>
     </tr>
+    <c:if test="${empty hhVacancyList}">
+        <h4 style="text-align: center">Unfortunately no vacancies were found. Please try another set of parameters</h4>
+    </c:if>
     <c:forEach items="${hhVacancyList}" var="vacancy2">
         <jsp:useBean id="vacancy2" scope="page" type="com.nazjara.aggregator.vo.Vacancy"/>
                 <tr class="${vacancy2.color ? 'color' : ''}">
@@ -70,6 +79,9 @@
         <th class="main">Company Name</th>
         <th class="main">Salary</th>
     </tr>
+    <c:if test="${empty rabotaPlusVacancyList}">
+        <h4 style="text-align: center">Unfortunately no vacancies were found. Please try another set of parameters</h4>
+    </c:if>
     <c:forEach items="${rabotaPlusVacancyList}" var="vacancy3">
         <jsp:useBean id="vacancy3" scope="page" type="com.nazjara.aggregator.vo.Vacancy"/>
         <tr class="${vacancy3.color ? 'color' : ''}">

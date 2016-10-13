@@ -19,6 +19,7 @@ public class RabotaStrategy implements Strategy
     private static final String userAgent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36";
     private static final String referrer = "http://rabota.ua/jobsearch/vacancy_list?regionId=2&keyWords=Java%20developer";
     private static final String PATH_TO_PROPERTIES = "/cities.properties";
+    private static final String nullChecking = "0";
 
 
     @Override
@@ -32,6 +33,10 @@ public class RabotaStrategy implements Strategy
             while(true)
             {
                 Document doc = getDocument(city,vacancy,i++);
+                if(nullChecking.equals(doc.getElementsByClass("rua-p-c-black").first().text()))
+                {
+                    break;
+                }
                 Elements e = doc.getElementsByClass("v");
                 if (e.size()!=0)
                 {

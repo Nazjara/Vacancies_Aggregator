@@ -23,3 +23,5 @@ How to install using Maven and Tomcat:
 4. Enjoy!  
 
 P.S. Application was created and tested using browser Google Chrome. Correct working using other browsers is not proved.
+
+P.P.S. Application is using standard sites' searching mechanisms, which are different for each of them. If search results from some site are inappropriate, please try to use another spelling for parameters (application supports both Cyrillic and Latin characters).
